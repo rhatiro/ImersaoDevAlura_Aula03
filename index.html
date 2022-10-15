@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Imersão Dev Alura - Aula 03 - Mentalista (Mentalista - ID3)</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Mentalista
+    </h1>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo"
+      alt=""><br>
+    <p class="page-subtitle">
+      Digite um número de 0 a 10
+    </p>
+    <p class="page-subtitle">
+      Você tem
+      <select id="gameover">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      tentativas!
+    </p>
+
+    <!--     <form onsubmit="Chutar()" action="javascript:void(0);"> -->
+    <form onsubmit="Chutar()">
+      <input type="number" id="valor" placeholder="??" min="0" max="10" minlength="1" maxlength="2" required>
+      <br>
+      <button type="submit" id="chutar">Chutar</button>
+    </form>
+    <h2 class="resultado" id="resultado"></h2>
+    <h2 class="resultado" id="dica"></h2>
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>
+  <script src="script.js"></script>
+</body>
+
+</html>
